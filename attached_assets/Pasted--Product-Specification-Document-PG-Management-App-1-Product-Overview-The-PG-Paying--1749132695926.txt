@@ -1,0 +1,120 @@
+**Product Specification Document: PG Management App**
+
+---
+
+**1. Product Overview**
+
+The PG (Paying Guest) Management App is a mobile application designed to streamline the management of PG accommodations. It serves two types of users: Admins (PG owners or managers) and Tenants (residents). The application allows seamless management of rooms, tenants, payments, and communication between both parties.
+
+---
+
+**2. Target Audience**
+
+* PG Owners/Managers (Admins)
+* PG Residents (Tenants)
+
+---
+
+**3. Platforms**
+
+* Android (API Level 21+)
+* iOS (iOS 12+)
+
+Developed using Flutter to support cross-platform functionality.
+
+---
+
+**4. Key Features**
+
+**4.1. Authentication**
+
+* Firebase Authentication
+* Google Sign-In and Phone Number Authentication
+* Role selection on first login (Admin or Tenant)
+
+**4.2. Admin Features**
+
+* Create and manage PG property profile
+* Add/edit/delete rooms with rent and capacity
+* Assign tenants to rooms
+* Track tenant rent status
+* Upload and view tenant documents
+* Post announcements/notices
+* View and manage complaints from tenants
+
+**4.3. Tenant Features**
+
+* View assigned room details
+* View monthly rent status (paid/unpaid)
+* Raise complaints/issues
+* View announcements from Admin
+
+**4.4. Notifications**
+
+* Push notifications for announcements, rent reminders, and complaint status
+
+**4.5. Data Management**
+
+* Cloud Firestore to manage user, room, and complaint data
+* Firebase Storage for document/image uploads
+
+---
+
+**5. User Roles**
+
+**Admin**
+
+* Full control over PG settings
+* Can manage multiple PG properties
+* Can view all tenant data
+
+**Tenant**
+
+* Limited access to personal and assigned room data
+* Can communicate issues via complaints
+
+---
+
+**6. Non-Functional Requirements**
+
+* Responsive and intuitive UI/UX
+* Scalable architecture with Firebase backend
+* Secure user data handling and access control
+* Offline access for viewing cached data
+
+---
+
+**7. Project Milestones**
+
+* Week 1: Requirement finalization and design mockups
+* Week 2-3: Flutter front-end development
+* Week 4: Firebase backend integration
+* Week 5: Testing and debugging
+* Week 6: Play Store & TestFlight deployment
+
+---
+
+**8. Tools & Technologies**
+
+* Flutter
+* Dart
+* Firebase Auth, Firestore, Cloud Storage, Cloud Messaging
+* GitHub for version control
+* Replit for initial prototype development
+
+---
+
+**9. Future Enhancements**
+
+* Payment gateway integration for rent
+* Multi-language support
+* PDF rent receipts
+* Admin dashboard web app
+
+---
+
+**10. Appendix**
+
+* Sample user flows
+* Entity relationship diagrams (ERD)
+* Wireframes (to be designed in Week 1)
